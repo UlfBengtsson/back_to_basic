@@ -73,7 +73,7 @@ class UserCalc extends Component {
         <button onClick={this.doSub}>Subtract</button>
         <p>Result: {this.state.result}</p>
 
-        <CalcHistory />
+        <CalcHistory previusResults={this.state.history} />
       </div>
     );
   }
